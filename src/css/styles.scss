@@ -19,6 +19,17 @@ $mt_3: 42px;
 html {
   width: 100%;
   font-size: 100%;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color2;
+  }
 }
 .dark_bg {
   background: #2e2925;
@@ -168,7 +179,7 @@ html {
   width: 100%;
   background: $color1;
   max-height: 110px;
-  z-index: 1;
+  z-index: 100;
 
   .logo {
     width: 100%;
@@ -176,6 +187,75 @@ html {
   }
 }
 // HEADER END
+
+/* ==================== SideBAR STYLING END ======================== */
+.SideBarContainer {
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  color: white;
+  font-size: 2rem;
+  background: #2e2925;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 99;
+
+  .logo {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+
+    img {
+      width: 120px;
+    }
+  }
+}
+
+.SideBarContainer ul {
+  padding-left: 0rem;
+}
+
+.SideBarContainer ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  padding: 0.4rem 0rem;
+  text-align: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  .activeNav::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 10%;
+    width: 100%;
+    background-color: #007bbc;
+    border-radius: 5px;
+  }
+}
+
+.CrossBTn {
+  position: absolute;
+  top: 7%;
+  right: 6.5%;
+  cursor: pointer;
+  height: 25px;
+}
+/* ==================== SideBAR STYLING END ======================== */
 
 // HERO START
 .hero_container {
