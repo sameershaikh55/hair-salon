@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Ruda", sans-serif;
+}
+
+// VARIABLES START
+$color1: #2e2925;
+$color2: #7d4e9a;
+$mt_1: 96px;
+$mt_2: 52px;
+$mt_3: 42px;
+// VARIABLES END
+
+// GLOBAL START
+html {
+  width: 100%;
+  font-size: 100%;
+}
+.dark_bg {
+  background: #2e2925;
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 92%;
+  }
+}
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 88%;
+  }
+}
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 84%;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 76%;
+  }
+}
+
+.f8 {
+  font-size: 0.5rem;
+}
+
+.f10 {
+  font-size: 0.625rem;
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f15 {
+  font-size: 0.938rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f18 {
+  font-size: 1.125rem;
+}
+
+.f20 {
+  font-size: 1.25rem;
+}
+
+.f22 {
+  font-size: 1.375rem;
+}
+
+.f24 {
+  font-size: 1.5rem;
+}
+
+.f34 {
+  font-size: 2.125rem;
+}
+
+.f30 {
+  font-size: 1.875rem;
+}
+
+.f35 {
+  font-size: 2.125rem;
+  line-height: 57px;
+}
+
+.f50 {
+  font-size: 3.125rem;
+  line-height: 65px;
+}
+
+.f64 {
+  font-size: 4rem;
+  line-height: 71px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+// COLORS
+.color1 {
+  color: $color1;
+}
+
+.color2 {
+  color: $color2;
+}
+
+.page_container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_bottom {
+  height: 100px;
+}
+
+// HEADER START
+.header_container {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  background: $color1;
+  max-height: 110px;
+  z-index: 1;
+
+  .logo {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+// HEADER END
+
+// HERO START
+.hero_container {
+  background: url("../assets/hero.svg");
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  button {
+    margin-bottom: 8rem;
+    min-width: 200px;
+    height: 80px;
+    background: #7d4e9a;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+  }
+}
+// HERO END
+
+// ABOUT START
+.about_container {
+  h1 {
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+}
+// ABOUT END
+
+// VIDEO START
+.video_container {
+  padding-bottom: $mt_1;
+
+  iframe {
+    border-radius: 30px;
+    margin-top: $mt_2;
+  }
+}
+// VIDEO END
+
+// SERVICES START
+.service_container {
+  margin-top: $mt_1;
+  margin-bottom: $mt_1;
+
+  h1 {
+    margin-bottom: $mt_1;
+  }
+
+  .single {
+    h2 {
+      margin-top: $mt_1;
+      margin-bottom: $mt_3;
+    }
+  }
+}
+// SERVICES END
+
+// PRICE START
+.price_container {
+  padding-top: $mt_1;
+  padding-bottom: $mt_1;
+  background: $color1;
+
+  h1 {
+    margin-bottom: $mt_2;
+  }
+
+  .row {
+    * {
+      color: #c5c5c5;
+    }
+  }
+
+  .see_container {
+    margin-top: $mt_2;
+
+    button {
+      background: #7d4e9a;
+      border-radius: 20px;
+      height: 70px;
+      min-width: 240px;
+      font-size: 1.3rem;
+      margin-bottom: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  ul li {
+    div {
+      height: 8px;
+      max-width: 8px;
+      background: #c5c5c5;
+      border-radius: 50px;
+    }
+
+    .p_ {
+      p {
+        min-width: 270px;
+      }
+    }
+  }
+}
+// PRICE END
+
+// SERVICES START
+.location_container {
+  margin-top: $mt_1;
+  margin-bottom: $mt_1;
+
+  h1 {
+    margin-bottom: $mt_1;
+  }
+}
+// SERVICES END
+
+// FOOTER START
+.footer_container {
+  background: $color1;
+  padding-top: $mt_1;
+  padding-bottom: $mt_1;
+
+  * {
+    color: #c5c5c5;
+  }
+
+  .contact_icons {
+    img {
+      max-width: 30px;
+    }
+
+    li {
+      display: flex;
+      gap: 1rem;
+      padding-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .para {
+    line-height: 32px;
+  }
+}
+// FOOTER END
+
+// SLIDER START
+.slider_container {
+  margin-top: $mt_2;
+
+  img {
+    padding: 0rem 1rem;
+  }
+
+  .slick-prev,
+  .slick-next {
+    z-index: 10;
+  }
+
+  .slick-next:before {
+    content: url("../assets/arr2.png");
+  }
+  .slick-prev:before {
+    content: url("../assets/arr1.png");
+  }
+}
+// SLIDER END

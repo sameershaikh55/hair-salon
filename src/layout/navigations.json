@@ -1,0 +1,24 @@
+{
+  "navigations": [
+    {
+      "name": "Abour Us",
+      "url": "/"
+    },
+    {
+      "name": "Reservation",
+      "url": "/"
+    },
+    {
+      "name": "Sercvices",
+      "url": "/"
+    },
+    {
+      "name": "Price",
+      "url": "/"
+    },
+    {
+      "name": "Location",
+      "url": "/"
+    }
+  ]
+}
