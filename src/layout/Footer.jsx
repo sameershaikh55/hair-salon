@@ -8,8 +8,8 @@ import i3 from "../assets/contact/i3.svg";
 const Footer = () => {
   return (
     <Container parentClass="footer">
-      <div className="row">
-        <div className="col-4">
+      <div className="row gy-5">
+        <div className="col-12 col-md-4">
           <div className="row">
             <div className="col-10">
               <img className="w-100" src={logo} alt="" />
@@ -17,8 +17,8 @@ const Footer = () => {
           </div>
           <p className="f22">© 2022 Lacabana Hair Studio</p>
         </div>
-        <div className="col-8">
-          <div className="d-flex justify-content-between">
+        <div className="col-12 col-md-8">
+          <div className="d-flex flex-column flex-md-row justify-content-between gap-5">
             <div>
               <h2 className="fw800 text-white">Hours</h2>
               <p className="para mt-4 f20">

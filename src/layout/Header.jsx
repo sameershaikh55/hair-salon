@@ -13,7 +13,7 @@ const Header = () => {
         <div>
           <img className="logo" src={logo} alt="logo" />
         </div>
-        <ul className="d-flex list-unstyled gap-4 mb-0">
+        <ul className="d-none d-md-flex list-unstyled gap-4 mb-0">
           {data.navigations.map((prev, i) => {
             return (
               <Link

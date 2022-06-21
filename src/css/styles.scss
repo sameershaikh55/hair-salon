@@ -216,6 +216,7 @@ html {
   padding-bottom: $mt_1;
 
   iframe {
+    height: 643px;
     border-radius: 30px;
     margin-top: $mt_2;
   }
@@ -352,5 +353,30 @@ html {
   .slick-prev:before {
     content: url("../assets/arr1.png");
   }
+
+  .slick-next {
+    right: -5px;
+  }
+  .slick-prev {
+    left: -5px;
+  }
 }
 // SLIDER END
+
+// MEDIA START
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .video_container iframe {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .header_container .logo {
+    max-width: 125px;
+  }
+  .header_bottom {
+    height: 75px;
+  }
+}
+// MEDIA END

@@ -27,10 +27,10 @@ const Service = () => {
     <Container parentClass="service">
       <h1 className="text-center f64 color1 fw-bold">Our Services</h1>
 
-      <div className="row align-items-end">
+      <div className="row align-items-end gy-5">
         {service.map((prev, i) => {
           return (
-            <div key={i} className="col-4 single">
+            <div key={i} className="col-12 col-sm-6 col-md-4 single">
               <div className="d-flex justify-content-center">
                 <img src={prev.img} alt="" />
               </div>

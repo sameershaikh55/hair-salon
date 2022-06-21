@@ -76,10 +76,10 @@ const Price = () => {
     <Container parentClass="price">
       <h1 className="text-center f64 text-white fw-bold">Price</h1>
 
-      <div className="row gx-5">
+      <div className="row gx-md-5 gy-5">
         {price.map((prev, i) => {
           return (
-            <div key={i} className="col-4">
+            <div key={i} className="col-12 col-sm-6 col-md-4">
               <h1 className="text-center">{prev.head}</h1>
 
               <ul className="list-unstyled mb-0">
@@ -104,7 +104,7 @@ const Price = () => {
       </div>
 
       <div className="see_container d-flex justify-content-end">
-        <button>See the whole price</button>
+        <button className="border-0">See the whole price</button>
       </div>
     </Container>
   );

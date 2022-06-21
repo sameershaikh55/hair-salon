@@ -6,7 +6,6 @@ const Video = () => {
     <Container parentClass="video">
       <iframe
         width="100%"
-        height="643px"
         src="https://www.youtube.com/embed/rVXNpNIYlGk"
         title="YouTube video player"
         frameBorder="0"
